@@ -110,7 +110,7 @@ async function setCardsField(cardId) {
 
   await showHiddenCardFieldsImages(true);
 
-  await hiddenCardDetails();
+  await hideCardDetails();
 
   await drawCardsInField(cardId, computerCardId);
 
@@ -121,7 +121,7 @@ async function setCardsField(cardId) {
 }
 
 async function drawCardsInField(cardId, computerCardId) {
-    state.fieldCards.player.setAttribute("src", cardData[cardId].img);
+  state.fieldCards.player.setAttribute("src", cardData[cardId].img);
   state.fieldCards.computer.setAttribute("src", cardData[computerCardId].img);
 }
 
@@ -135,7 +135,7 @@ async function showHiddenCardFieldsImages(value) {
   }
 }
 
-async function hiddenCardDetails() {
+async function hideCardDetails() {
   state.cardSprites.avatar.setAttribute("src", "");
   state.cardSprites.name.innerText = "";
   state.cardSprites.type.innerText = "";
