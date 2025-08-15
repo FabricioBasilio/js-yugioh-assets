@@ -1,3 +1,15 @@
+body {
+  cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+button,
+a,
+img:hover,
+button:hover,
+a:hover {
+  cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
 div.bg-video {
   position: absolute;
   z-index: -2;
@@ -37,6 +49,7 @@ div.container {
 div.container__left {
   width: 35%;
   min-width: 300px;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -84,37 +97,52 @@ div.card-box__container {
 }
 
 div.card-versus__container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.2rem;
-    height: 200px;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  padding-top: 0.2rem;
+  height: 200px;
 }
 
-div.versus-top, div.versus-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+div.versus-top,
+div.versus-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div.versus-bottom {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #next-duel {
-    display: none;
+  display: none;
 }
 
 div.card-box {
-    height: 10rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 div.card-infield {
-    height: 11.2rem;
-    width: 8rem;
-    border-radius: 8px;
+  height: 11.2rem;
+  width: 8rem;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+}
+
+div.card-infield img {
+  border: none;
+}
+
+img.card {
+  transition: transform 0.2s;
+}
+
+img.card:hover {
+  transform: scale(1.2);
 }
