@@ -7,3 +7,8 @@ conceitos abordados:
 - Armazenamento e gerenciamento de estado manual
 - Funções limpas
 - Organização de código
+
+
+## Acesso ao projeto  
+
+Você pode acessar o projeto através da descrição ou clicando [aqui](https://fabriciobasilio.github.io/js-yugioh-assets/).
